@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment variables — NEVER commit secrets
+.env
+.env.*
+
+# MLflow local runs (too large for GitHub)
+mlruns/
+mlflow.db
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Generated reports (rebuilt at runtime by app.py)
+data_drift_report.html
+drift_summary.json
+retrain_log.json
+
+# Large raw data — do NOT commit the full Kaggle dataset
+train_transaction.csv
+train_identity.csv
+test_transaction.csv
+test_identity.csv
